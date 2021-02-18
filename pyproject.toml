@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.scripts]
+flit = "flit:main"
+
+[tool.flit.metadata]
+module = "python-template"
+author = "Alexander Knemeyer"
+author-email = "alknemeyer@hey.com"
+home-page = "https://github.com/alknemeyer/python-template"
+requires = [
+]
+description-file = "README.md"
+requires-python = ">=3.8"
+keywords = "example,template"
+classifiers = [
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
