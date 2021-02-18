@@ -8,10 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - uses: psf/black@stable
-        with:
-          args: ". --check"
       # From https://github.com/psf/black/actions/runs/17913292/workflow
+      - run: pip install black
+      - run: black --check .
       - name: If needed, commit black changes to the pull request
         if: failure()
         run: |
