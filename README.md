@@ -1,6 +1,6 @@
 # Python-template
 
-This is a template Python repository which describes a workflow and set of tools, to make group projects more manageable.
+A simple template Python repository which describes a workflow and set of tools, to make group projects more manageable.
 
 Other templates exist (see eg: [1](https://github.com/TezRomacH/python-package-template), [2](https://github.com/patevs/python-template), [3](https://github.com/scottclowe/python-template-repo)) and it would be worthwhile to read through them, but they generally feel quite bloated and were likely written for a very different programming environment than what you'll be working in. So, this one is intentionally quite simple.
 
