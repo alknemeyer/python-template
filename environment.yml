@@ -11,8 +11,8 @@ dependencies:
   - libgcc-ng=9.1.0=hdf63c60_0
   - libstdcxx-ng=9.1.0=hdf63c60_0
   - ncurses=6.2=he6710b0_1
-  - openssl=1.1.1i=h27cfd23_0
-  - pip=20.3.3=py39h06a4308_0
+  - openssl=1.1.1j=h27cfd23_0
+  - pip=21.0.1=py39h06a4308_0
   - python=3.9.1=hdb3f193_2
   - readline=8.1=h27cfd23_0
   - setuptools=52.0.0=py39h06a4308_0

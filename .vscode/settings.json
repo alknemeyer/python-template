@@ -1,4 +1,5 @@
 {
+    // en_ZA = South African English
     "spellright.language": [
         "en_ZA"
     ],
@@ -6,5 +7,11 @@
         "markdown",
         "latex",
         "plaintext"
-    ]
+    ],
+    //
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    // I don't like this person-specific path, but I don't know of
+    // a proper solution
+    "python.pythonPath": "~/miniconda3/envs/python-template/bin/python"
 }
