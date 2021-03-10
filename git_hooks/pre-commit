@@ -19,7 +19,7 @@ if [ "$branch" = "main" ]; then
 fi
 
 # format code before committing it
-if ! type "$black" > /dev/null; then
+if ! command -v black > /dev/null; then
   echo "Please make sure you have the \"black\" code formatter on your path."
   exit 1
 fi
