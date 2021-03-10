@@ -1,2 +1,5 @@
 # don't commit user-specific settings
 .vscode/settings.json
+
+# Python precompilation stuff
+**/__pycache__/
