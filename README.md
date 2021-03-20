@@ -1,29 +1,29 @@
-# Python-template
+# Python-template  <!-- omit in toc -->
 
 A simple template Python repository which describes a workflow and set of tools, to make group projects more manageable.
 
-Other templates exist (see eg: [1](https://github.com/TezRomacH/python-package-template), [2](https://github.com/patevs/python-template), [3](https://github.com/scottclowe/python-template-repo)) and it would be worthwhile to read through them, but they generally feel quite bloated and were likely written for a very different programming environment than what you'll be working in. So, this one is intentionally quite simple.
+Other templates exist (see eg: [1](https://github.com/TezRomacH/python-package-template), [2](https://github.com/patevs/python-template), [3](https://github.com/scottclowe/python-template-repo)) and it would be worthwhile to read through them, but they generally feel quite bloated and were likely written for a very different programming environment than what you'll be working in. So, this one is an intentionally simple and ~~opinionated~~ _curated_ overview of a set of tools and practices that I like.
 
-- [Python-template](#python-template)
-  - [IDEs](#ides)
-    - [VS Code](#vs-code)
-    - [Jupyter Lab](#jupyter-lab)
-    - [PyCharm](#pycharm)
-  - [Applications vs libraries](#applications-vs-libraries)
-  - [Virtual environments](#virtual-environments)
-    - [Conda](#conda)
-  - [Coding style](#coding-style)
-    - [Auto formatters](#auto-formatters)
-    - [Linting](#linting)
-    - [Logging](#logging)
-  - [Testing](#testing)
-  - [Contribution guide](#contribution-guide)
-  - [Package and upload](#package-and-upload)
-  - [Software versioning](#software-versioning)
-  - [Writing about Python](#writing-about-python)
-  - [Learning about Python](#learning-about-python)
-  - [An opinionated setup](#an-opinionated-setup)
 
+- [IDEs](#ides)
+  - [VS Code](#vs-code)
+  - [Jupyter Lab](#jupyter-lab)
+  - [PyCharm](#pycharm)
+- [Applications vs libraries](#applications-vs-libraries)
+- [Virtual environments](#virtual-environments)
+  - [Conda](#conda)
+- [Coding style](#coding-style)
+  - [Auto formatters](#auto-formatters)
+  - [Linting](#linting)
+  - [Logging](#logging)
+- [Testing](#testing)
+- [Contribution guide](#contribution-guide)
+- [Package and upload](#package-and-upload)
+- [Software versioning](#software-versioning)
+- [Keep a change log](#keep-a-change-log)
+- [Writing about Python](#writing-about-python)
+- [Learning about Python](#learning-about-python)
+- [An opinionated setup](#an-opinionated-setup)
 
 ## IDEs
 
@@ -32,6 +32,7 @@ Other templates exist (see eg: [1](https://github.com/TezRomacH/python-package-t
 
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) for your general Python needs. It packages Pylint (mentioned later), among other things.
 - [Spell Right](https://marketplace.visualstudio.com/items?itemName=ban.spellright) to make sure you spell words like ~~"dependancy"~~ "dependency" correctly.
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) which provides useful shortcuts for markdown, and keeps the table of contents up to date automatically.
 
 You can recommend certain extensions as part of a project, so that your collaborators as the same setup -- see [this tutorial](https://tattoocoder.com/recommending-vscode-extensions-within-your-open-source-projects/), or this project's [extensions.json](.vscode/extensions.json) file.
 
@@ -195,6 +196,7 @@ Other projects use `setup.py` and `setup.cfg`. You could use those, but I honest
 
 Flit requires that the package version is specified by a variable named `__version__` in `__init__.py`, which brings us to:
 
+
 ## Software versioning
 Software libraries should be given a version number so that users of the library know what they have installed. [Semantic Versioning](https://semver.org/) (aka "SemVer") seems to be the most popular approach, summarized as follows:
 
@@ -205,6 +207,10 @@ Software libraries should be given a version number so that users of the library
 > Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 There are other versioning styles -- for example, [Calendar Versioning](https://calver.org/) ("CalVer") is used by Ubuntu, where "Ubuntu 18.04" represents the version released in April of 2018. See also [sentimental versioning](http://sentimentalversioning.org/) for a fun read :)
+
+
+## Keep a change log
+On the subject of software versioning, it's a good idea to document the evolution of a project via a change log. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for details, where this idea is explained in more detail. Examples include keepachangelog.com's [CHANGELOG.md](https://github.com/olivierlacan/keep-a-changelog/blob/master/CHANGELOG.md), the Julia [HISTORY.md](https://github.com/JuliaLang/julia/blob/master/HISTORY.md) file and this [HISTORY.rst](https://github.com/pwitab/ublox/blob/master/HISTORY.rst) file which I think serves as a nice simple template - they're named differently, but all represent the same idea.
 
 
 ## Writing about Python
